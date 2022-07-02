@@ -41,8 +41,9 @@ body {
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+    width: 350px;
+    height: 1000px;
+    /* min-height: 20rem; */
 }
 
 .group {
@@ -54,6 +55,12 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+}
+
+.group1 {
+    display: flex;
+    justify-content: space-between;
+ 
 }
 
 .group:nth-child(1) {
@@ -73,7 +80,13 @@ body {
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto 10px;
+    display: block;
+    border-radius: 100px;
+    border-width: solid 1px #efefef;
+
 }
 
 .instagram-login {
@@ -89,8 +102,18 @@ body {
 }
 
 .not-account {
-    color: rgb(160, 160, 160);
+    color: rgba(var(--i1d,38,38,38),1);
+    display: inline;
+    position: relative;
+
 }
+
+.not-account1 {
+    color: rgba(var(--d69,0,149,246),1);
+    padding: 0;
+    margin: 0;
+}
+
 
 .link-blue {
     color: #0095f6;
@@ -154,6 +177,10 @@ body {
     }
     
     .group {
+        border: 1px solid transparent;
+    }
+
+    .group1 {
         border: 1px solid transparent;
     }
 }
